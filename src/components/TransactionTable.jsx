@@ -55,7 +55,6 @@ const TransactionTable = () => {
           </Flex>
         </Flex>
         <Table variant="simple">
-          <TableCaption></TableCaption>
           <Thead bg={'#F2F2F2'}>
             <Tr>
               <Th w={'246px'}>Order Id</Th>
@@ -64,8 +63,8 @@ const TransactionTable = () => {
               </Th>
               <Th textAlign={'right'}>Order Amount</Th>
               <Th textAlign={'right'}>
-                Transaction fees{' '}
-                <InfoOutlineIcon ml={'4px'} position={'fixed'} top={4} />
+                Transaction fees
+                <InfoOutlineIcon ml={'4px'} mb={0.5}/>
               </Th>
             </Tr>
           </Thead>
