@@ -10,7 +10,13 @@ import {
 
 const TopNav = () => {
   return (
-    <Flex my={'12px'} alignItems={'center'} justifyContent={'space-between'}>
+    <Flex
+
+      py={'12px'}
+      alignItems={'center'}
+      justifyContent={'space-between'}
+      borderBottom={'1px solid #D9D9D9'}
+    >
       <Flex>
         <Text mr={'16px'}>Payments</Text>
         <Icon mr={'6px'} mt={1.5} p={0.5} />

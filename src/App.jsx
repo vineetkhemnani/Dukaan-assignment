@@ -7,7 +7,7 @@ import Overview from './components/Overview'
 const App = () => {
   return (
     <>
-      <Flex>
+      <Flex fontFamily={'Inter'}>
         <LeftNav />
         <Flex flexDirection={'column'} mx={'32px'} width={'77vw'}>
           <TopNav />
