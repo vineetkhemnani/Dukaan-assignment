@@ -9,10 +9,12 @@ const App = () => {
     <>
       <Flex fontFamily={'Inter'}>
         <LeftNav />
-        <Flex flexDirection={'column'} mx={'32px'} width={'77vw'}>
+        <Flex flexDirection={'column'}>
           <TopNav />
-          <Overview />
-          <TransactionTable />
+          <Box mx={'32px'}>
+            <Overview />
+            <TransactionTable />
+          </Box>
         </Flex>
       </Flex>
     </>

@@ -14,6 +14,8 @@ import {
 const TopNav = () => {
   return (
     <Flex
+      bg={'white'}
+      px={'32px'}
       py={'12px'}
       alignItems={'center'}
       justifyContent={'space-between'}

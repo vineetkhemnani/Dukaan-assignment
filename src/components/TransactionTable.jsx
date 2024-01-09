@@ -25,7 +25,7 @@ const TransactionTable = () => {
           Transactions | This month
         </Text>
       </Box>
-      <TableContainer w={'1128px'}>
+      <TableContainer w={'77.5vw'}>
         <Flex alignItems={'center'} justifyContent={'space-between'}>
           <InputGroup
             placeholder="Search features, tutorials, etc"
