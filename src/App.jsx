@@ -9,10 +9,10 @@ const App = () => {
     <>
       <Flex>
         <LeftNav />
-        <Flex flexDirection={'column'} mx={'32px'}>
+        <Flex flexDirection={'column'} mx={'32px'} width={'77vw'}>
           <TopNav />
           <Overview />
-          {/* <TransactionTable/> */}
+          <TransactionTable />
         </Flex>
       </Flex>
     </>

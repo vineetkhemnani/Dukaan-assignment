@@ -15,7 +15,7 @@ import leftConstants from '../constants/leftConstants'
 
 const LeftNav = () => {
   return (
-    <VStack w={'100%'} h={'1482px'} bg={'#1E2640'} py={'16px'} px={'10px'}>
+    <VStack w={'224px'} h={'1482px'} bg={'#1E2640'} py={'16px'} px={'10px'}>
       <Flex
         justifyContent={'space-between'}
         gap={'12px'}
