@@ -17,7 +17,7 @@ const TransactionTable = () => {
   return (
     <>
       <Box>
-        <Text fontSize={'20px'} fontWeight={'500'} mb={'20px'}>Transactions | This month</Text>
+        <Text fontSize={'20px'} fontWeight={'500'} mt={'32px'} mb={'20px'}>Transactions | This month</Text>
       </Box>
       <TableContainer w={'1128px'}>
         <Input
