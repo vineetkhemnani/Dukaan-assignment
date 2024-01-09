@@ -11,9 +11,8 @@ import {
 const TopNav = () => {
   return (
     <Flex
-      mx={'32px'}
       my={'12px'}
-      borderBottom={'1px solid #D9D9D9'}
+      alignItems={'center'}
       justifyContent={'space-between'}
     >
       <Flex flex={'1 1 0'}>
