@@ -1,3 +1,4 @@
+import { SearchIcon } from '@chakra-ui/icons'
 import {
   Box,
   Container,
@@ -5,13 +6,14 @@ import {
   HStack,
   Icon,
   Input,
+  InputGroup,
+  InputLeftElement,
   Text,
 } from '@chakra-ui/react'
 
 const TopNav = () => {
   return (
     <Flex
-
       py={'12px'}
       alignItems={'center'}
       justifyContent={'space-between'}
@@ -24,12 +26,15 @@ const TopNav = () => {
           How it works
         </Text>
       </Flex>
-      <Input
-        p={'9px 16px'}
-        placeholder="Search features, tutorials, etc"
-        w={'400px'}
-        fontSize={'15px'}
-      ></Input>
+      <InputGroup m={'9px 16px'} w={'400px'}>
+        <InputLeftElement pointerEvents="none">
+          <SearchIcon color="gray.300" />
+        </InputLeftElement>
+        <Input
+          placeholder="Search features, tutorials, etc"
+          fontSize={'15px'}
+        />
+      </InputGroup>
       <Flex gap={'12px'}>
         <Box bg={'#E6E6E6'} borderRadius={'full'} p={'10px'}>
           <div

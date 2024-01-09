@@ -1,4 +1,4 @@
-import { ChevronDownIcon, InfoOutlineIcon } from '@chakra-ui/icons'
+import { ChevronDownIcon, InfoOutlineIcon, SearchIcon } from '@chakra-ui/icons'
 import {
   Table,
   Thead,
@@ -14,6 +14,8 @@ import {
   Box,
   Button,
   Flex,
+  InputGroup,
+  InputLeftElement,
 } from '@chakra-ui/react'
 const TransactionTable = () => {
   return (
@@ -25,13 +27,21 @@ const TransactionTable = () => {
       </Box>
       <TableContainer w={'1128px'}>
         <Flex alignItems={'center'} justifyContent={'space-between'}>
-          <Input
+          <InputGroup
             placeholder="Search features, tutorials, etc"
             my={'10px'}
             mr={'16px'}
             w={'fit-content'}
-            pr={20}
-          />
+          >
+            <InputLeftElement pointerEvents="none">
+              <SearchIcon color="gray.300" />
+            </InputLeftElement>
+            <Input
+              pr={20}
+              w={'fit-content'}
+              placeholder="Search features, tutorials, etc"
+            />
+          </InputGroup>
           <Flex gap={2}>
             <Button>Sort</Button>
             <Button>
@@ -64,7 +74,7 @@ const TransactionTable = () => {
               <Th textAlign={'right'}>Order Amount</Th>
               <Th textAlign={'right'}>
                 Transaction fees
-                <InfoOutlineIcon ml={'4px'} mb={0.5}/>
+                <InfoOutlineIcon ml={'4px'} mb={0.5} />
               </Th>
             </Tr>
           </Thead>
