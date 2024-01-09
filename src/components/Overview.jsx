@@ -1,10 +1,26 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { ChevronDownIcon } from '@chakra-ui/icons'
+import { Button, Flex, Text } from '@chakra-ui/react'
 
 const Overview = () => {
   return (
-    <Flex flexDirection={'column'} alignItems={'flex-start'} gap={'24px'} alignSelf={'stretch'}>
-        <Flex justifyContent={'space-between'} alignItems={'center'} alignSelf={'stretch'}></Flex>
-      <Text fontSize={'20px'} fontWeight={500}>Overview</Text>
+    <Flex
+      flexDirection={'column'}
+      alignItems={'flex-start'}
+      gap={'24px'}
+      alignSelf={'stretch'}
+    >
+      <Flex
+        justifyContent={'space-between'}
+        alignItems={'center'}
+        alignSelf={'stretch'}
+      >
+        <Text fontSize={'20px'} fontWeight={500}>
+          Overview
+        </Text>
+        <Button bg={'gray.50'} p={2}>
+          Last month <ChevronDownIcon></ChevronDownIcon>
+        </Button>
+      </Flex>
       <Flex alignItems={'flex-start'} gap={'20px'} alignSelf={'stretch'}>
         <Flex
           bg={'white'}

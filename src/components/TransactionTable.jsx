@@ -12,7 +12,6 @@ import {
   Input,
   Text,
   Box,
-  Container,
   Button,
   Flex,
 } from '@chakra-ui/react'
